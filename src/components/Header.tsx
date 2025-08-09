@@ -12,7 +12,9 @@ export default async function Header() {
             <h2>Expense Tracker</h2>
             
             <div className="navbar-right">
+                <SignedIn>
                 <CurrencySelector />
+                </SignedIn>
                 <SignedOut>
                     <SignInButton />
                 </SignedOut>
