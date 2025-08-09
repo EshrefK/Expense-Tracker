@@ -41,7 +41,7 @@ export async function addTransaction(formData: FormData): Promise<TransactionRes
         revalidatePath("/")
         return {data: transactionData}
     }
-    catch(error){
+    catch{
         return {error: "Failed to add transaction"}
     }
 
